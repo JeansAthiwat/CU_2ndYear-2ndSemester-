@@ -11,8 +11,8 @@ candidate solution : { i l o v e c a t < 3}
 Set of candidate solution : powerset of { i l o v e c a t < 3}
 Satisfaction condition : all the possible combi
 */
-int comb_count = 0; // combinations count
-int recur_count = 0; //number of times the function is called
+int comb_count = 0;  // combinations count
+int recur_count = 0; // number of times the function is called
 void combinations(int total_index, std::vector<bool> &areSol, int current_index, vector<char> &candidateSolution)
 {
     // recursive At ith step, we decides if the ith item is selected
@@ -59,6 +59,6 @@ int main()
     cout << total_index << endl;
     cout << endl
          << comb_count << endl;
-             cout << endl
+    cout << endl
          << recur_count << endl;
 }
