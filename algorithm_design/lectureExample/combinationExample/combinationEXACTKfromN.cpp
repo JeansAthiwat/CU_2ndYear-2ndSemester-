@@ -19,14 +19,18 @@ void combinations(int total_index, std::vector<bool> &areSol, int current_index,
     if (current_index < total_index)
     {
         // preorder traversal
+        // if we are not gonnapick currect_index we must make sure that the remaining index is more to k
+        if (chosen + (total_index - current_index) > k)  // 3 + (11 - 5)  > 7
+        {
+            areSol[current_index] = false;
+            combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen);
+        }
 
-        areSol[current_index] = false;
-        combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen);
         // if we pick we must check that the sol len is not more that k (aka chosen < k)
         if (chosen < k)
         {
             areSol[current_index] = true;
-            combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen+1);
+            combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen + 1);
         }
     }
     else
