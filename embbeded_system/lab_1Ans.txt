@@ -1,0 +1,14 @@
+GPIOx_MODER (GPIO x Mode Register):
+This register is used to configure the pin modes (input, output, alternate function, or analog) for each pin in the specified GPIO port.
+
+GPIOx_OTYPER (GPIO x Output Type Register):
+This register is used to configure the output type (push-pull or open-drain) for each pin in the specified GPIO port.
+
+GPIOx_OSPEEDR (GPIO x Output Speed Register):
+This register is used to configure the output speed (low, medium, high, or very high) for each pin in the specified GPIO port.
+
+GPOx_PUPDR (GPIO x Pull-Up/Pull-Down Register):
+This register is used to configure the pull-up or pull-down resistors for each pin in the specified GPIO port.
+
+GPIOx_ODR (GPIO x Output Data Register):
+This register holds the output data values for the pins in the specified GPIO port. Writing to this register allows you to set or clear individual output pins.
