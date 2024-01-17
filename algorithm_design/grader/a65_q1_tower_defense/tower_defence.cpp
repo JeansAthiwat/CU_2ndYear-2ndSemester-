@@ -1,58 +1,59 @@
 #include <bits/stdc++.h>
 
-int tile_count, monster_count, turret_count, turret_range;
-std::vector<int> monster_pos;
-std::vector<int> monster_health;
-std::vector<int> turret_pos;
+using namespace std;
 
-void perms_target(int curr_turret, int remaining_health,std::vector<int> target_sol) {
-    //purmutate till kth turret if found min remaining_health use it 
-    if(curr_turret < turret_count){
-
-    }
-
+void permutate(int k, vector<int> sol, int len, int min_health, vector<vector<int>> shootable_pos)
+{
 }
 
 int main()
 {
-    // taking inputs
-    std::cin >> tile_count >> monster_count >> turret_count >> turret_range; // n , m, k , w
-    monster_pos.resize(m);
-    monster_health.resize(m);
-    turret_pos.resize(k);
+    int n, m, k, w;
+    cin >> n >> m >> k >> w;
 
-    int total_health = 0;
-    for (int i = 0; i < m; i++)
-        std::cin >> p[i];
+    vector<int> p(m);
+    vector<int> h(m);
+    vector<int> t(k);
+
     for (int i = 0; i < m; i++)
     {
-        int inp = 0;
-        std::cin >> inp;
-        total_health += inp;
+        cin >> p[i];
+    }
+    int sum = 0;
+    for (int i = 0; i < m; i++)
+    {
+        int inp;
+        cin >> inp;
         h[i] = inp;
+        sum += inp;
     }
     for (int i = 0; i < k; i++)
-        std::cin >> t[i];
+    {
+        cin >> t[i];
+    }
 
-    // pass in target_sol to prevent constructing new one on every recur
-    std::vector<int> target_sol(k);
+    // matrix of turret's shootable monsterindex
+    vector<vector<int>> shootable_pos(k);
+    for (int i = 0; i < k; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (t[i] + w >= p[j] && p[j] >= t[i] - w)
+            {
+                shootable_pos[i].push_back(j);
+            }
+        }
+    }
 
+    for (auto &turret : shootable_pos)
+    {
+        for (auto &pos : turret)
+        {
+            cout << pos << " ";
+        }
+        cout << endl;
+    }
 
-    return 0;
+    vector<int> sol; // [which mon, which mon, which mon , ..., 8th turret]
+    permutate(k, sol, len, min_health, shootable_pos);
 }
-
-/*
-IDEA:
-permutate through all possible target monster for each terret [t1,t2,t3,t4,t5,t6,t7,t8] and find the min sum
-
-
-*/
-
-// brute forces through every combination of possible outcum
-// Find the MINIMUM value
-
-/*
-USEFUL: number of turrent and monster < 8
-
-MY WAY: permutate through each turrets position
-*/
