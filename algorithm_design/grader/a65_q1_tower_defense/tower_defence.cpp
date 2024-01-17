@@ -2,58 +2,85 @@
 
 using namespace std;
 
-void permutate(int k, vector<int> sol, int len, int min_health, vector<vector<int>> shootable_pos)
-{
-}
-
 int main()
 {
+
+    /*
+    bokuno algoritemu
+
+    -take a turret array , sort in in accending order.
+    -for each turret from left to right "shoot the left most target that the hp is not 0"
+    */
+
+    // --------------------------------take input
     int n, m, k, w;
     cin >> n >> m >> k >> w;
 
-    vector<int> p(m);
-    vector<int> h(m);
     vector<int> t(k);
 
+    // create a moster (pos,hp) pair
+    vector<pair<int, int>> monster(m);
     for (int i = 0; i < m; i++)
     {
-        cin >> p[i];
+        cin >> monster[i].first;
     }
-    int sum = 0;
+    int total_health = 0;
     for (int i = 0; i < m; i++)
     {
         int inp;
         cin >> inp;
-        h[i] = inp;
-        sum += inp;
+        monster[i].second = inp;
+        total_health += inp;
     }
+
+    // take turret pos
     for (int i = 0; i < k; i++)
     {
         cin >> t[i];
     }
 
-    // matrix of turret's shootable monsterindex
-    vector<vector<int>> shootable_pos(k);
-    for (int i = 0; i < k; i++)
+    // sort the turret position array
+    sort(t.begin(), t.end());
+    sort(monster.begin(), monster.end());
+
+
+    //print sortedturretarray
+    /*
+    cout << "sorted turrets";
+    for (auto &x : t)
     {
-        for (int j = 0; j < m; j++)
+        cout << x << " ";
+    }
+    cout << endl;*/
+
+    /*cout << "monster pos,health: ";
+    for (auto &mon : monster)
+    {
+        cout << mon.first << ":" << mon.second << " ";
+    }
+    cout << endl;*/
+
+    // loop through each turret
+    // shoot the leftmost monster in tile (monster is in range and hp > 0)
+    int damage = 0;
+    for (int tI = 0; tI < k; tI++)
+    {
+        for (int mI = 0; mI < m; mI++)
         {
-            if (t[i] + w >= p[j] && p[j] >= t[i] - w)
+            // monster in turrent range
+            if (t[tI] + w >= monster[mI].first && monster[mI].first >= t[tI] - w)
             {
-                shootable_pos[i].push_back(j);
+                if (monster[mI].second > 0)
+                {
+                    //cout << "turret at pos" << t[tI] << " damaged monster at" << monster[mI].first << endl;
+                    damage++;
+                    break;
+                }
             }
         }
     }
 
-    for (auto &turret : shootable_pos)
-    {
-        for (auto &pos : turret)
-        {
-            cout << pos << " ";
-        }
-        cout << endl;
-    }
+    int remaining_health = total_health-damage;
+    cout << remaining_health;
 
-    vector<int> sol; // [which mon, which mon, which mon , ..., 8th turret]
-    permutate(k, sol, len, min_health, shootable_pos);
 }
