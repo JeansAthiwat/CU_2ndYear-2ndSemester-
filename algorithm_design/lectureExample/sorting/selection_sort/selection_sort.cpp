@@ -2,7 +2,7 @@
 using namespace std;
 
 template <typename T>
-void selection_sort(vector<T> &V)
+void insertion_sort(vector<T> &V)
 {
 
     // in each loop
@@ -29,7 +29,7 @@ void selection_sort(vector<T> &V)
 int main()
 {
     vector<int> vec = {1, 5, 4, 6, 2, 8, 7, 9, 3};
-    selection_sort(vec);
+    insertion_sort(vec);
 
     for (auto &x : vec)
     {
