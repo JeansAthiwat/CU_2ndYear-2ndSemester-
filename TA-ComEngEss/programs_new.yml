@@ -1,0 +1,229 @@
+programs:
+    - id: 1
+      name: 'Problem: compute values'
+      questions:
+        - id: 1A
+          description: 'Write a program in the machine language to XOR the contents of the memory cell at address 0x20 and 0x21.  The result must be stored in the memory cell at address 0x22.'
+          testcases:
+            - input:
+                address: 0x20
+                values:
+                    - 10
+                    - 0xAF
+              output:
+                address: 0x22
+                values:
+                    - 0xA5
+            - input:
+                address: 0x20
+                values:
+                    - 0xFF
+                    - 0x0F
+              output:
+                address: 0x22
+                values:
+                    - 0xF0
+            - input:
+                address: 0x20
+                values:
+                    - 0x0F
+                    - 0xF0
+              output:
+                address: 0x22
+                values:
+                    - 0xFF
+        - id: 1B
+          description: 'Write a program in the machine language to AND the contents of the memory cell at address 0x2E and 0x2F.  The result must be stored in the memory cell at address 0x20.'
+          testcases:
+            - input:
+                address: 0x2E
+                values:
+                    - 0x1A
+                    - 0x8F
+              output:
+                address: 0x20
+                values:
+                    - 0x0A
+        - id: 1C
+          description: 'Write a program in the machine language to OR the contents of the memory cell at address 0x1E and 0x1F.  The result must be stored in the memory cell at address 0x20.'
+          testcases:
+            - input:
+                address: 0x1E
+                values:
+                    - 0x94
+                    - 0xC1
+              output:
+                address: 0x20
+                values:
+                    - 0xD5
+    - id: 2
+      name: 'Problem: compare contents'
+      questions:
+        - id: 2A
+          description: 'Write a program in the machine language to check the contents of the memory cell at address 0x21 and 0x22.  If they are equal, store value 1 to the memory cell at address 0x20.  Otherwise, store value 0.'
+          testcases:
+            - input:
+                address: 0x21
+                values:
+                    - 0xFF
+                    - 0xFF
+              output:
+                address: 0x20
+                values:
+                    - 1
+            - input:
+                address: 0x21
+                values:
+                    - 0x00
+                    - 0xFF
+              output:
+                address: 0x20
+                values:
+                    - 0
+            - input:
+                address: 0x21
+                values:
+                    - 0xA0
+                    - 0xA0
+              output:
+                address: 0x20
+                values:
+                    - 1
+        - id: 2B
+          description: 'Write a program in the machine language to check the content of the memory cell at address 0x30.  If the value is EVEN number, store value 0 to the memory cell at address 0x31.  Otherwise, store value 1.'
+          testcases:
+            - input:
+                address: 0x30
+                values:
+                    - 0x04
+              output:
+                address: 0x31
+                values:
+                    - 0
+            - input:
+                address: 0x30
+                values:
+                    - 0x2F
+              output:
+                address: 0x31
+                values:
+                    - 1
+            - input:
+                address: 0x30
+                values:
+                    - 0x58
+              output:
+                address: 0x31
+                values:
+                    - 0
+            - input:
+                address: 0x30
+                values:
+                    - 0x65
+              output:
+                address: 0x31
+                values:
+                    - 1
+        - id: 2C
+          description: 'Write a program in the machine language to check the content of the memory cell at address 0x30.  Assume the content is a signed integer number.  If the value is a positive or zero number, store value 1 to the memory cell at address 0x31.  Otherwise, store value 0xFF.'
+          testcases:
+            - input:
+                address: 0x30
+                values:
+                    - 0x04
+              output:
+                address: 0x31
+                values:
+                    - 1
+            - input:
+                address: 0x30
+                values:
+                    - 0x80
+              output:
+                address: 0x31
+                values:
+                    - 0xFF
+            - input:
+                address: 0x30
+                values:
+                    - 0x58
+              output:
+                address: 0x31
+                values:
+                    - 1
+            - input:
+                address: 0x30
+                values:
+                    - 0xAA
+              output:
+                address: 0x31
+                values:
+                    - 0xFF
+    - id: 3
+      name: 'Problem: loop computation'
+      questions:
+        - id: 3A
+          description: 'Write a program in the machine language to multiply the contents of the memory cell at address 0x50 to the contents of the memory cell at address 0x51 and stores the result of multiplication to the memory cell at address 0x52.  You can assume that both values are positive integer and the values are small enough such that the result of multiplication can be stored in 1 byte.'
+          testcases:
+            - input:
+                address: 0x50
+                values:
+                    - 2
+                    - 3
+              output:
+                address: 0x52
+                values:
+                    - 6
+            - input:
+                address: 0x50
+                values:
+                    - 4
+                    - 2
+              output:
+                address: 0x52
+                values:
+                    - 8
+            - input:
+                address: 0x50
+                values:
+                    - 5
+                    - 1
+              output:
+                address: 0x52
+                values:
+                    - 5
+        - id: 3B
+          description: 'Write a program in the machine language to count bit with value 1 in the content of memory cell at address 0x50 and store the counting result to the memory cell at address 0x51.  For example, if the content at address 0x50 is 0x0B (or 00001011 in binary), your program will write value "3" to memory location 0x51'
+          testcases:
+            - input:
+                address: 0x50
+                values:
+                    - 0x0B
+              output:
+                address: 0x51
+                values:
+                    - 3
+            - input:
+                address: 0x50
+                values:
+                    - 0x01
+              output:
+                address: 0x51
+                values:
+                    - 4
+            - input:
+                address: 0x50
+                values:
+                    - 0xF0
+              output:
+                address: 0x51
+                values:
+                    - 4
+            - input:
+                address: 0x50
+                values:
+                    - 0x00
+              output:
+                address: 0x51
+                values:
+                    - 0
