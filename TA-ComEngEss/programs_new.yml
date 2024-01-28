@@ -210,6 +210,46 @@ programs:
                 address: 0x31
                 values:
                     - 0xFF
+        - id: 2D
+          description: 'Write a machine language program to check whether the value of the content in the memory cell at address 0x30 is exactly double the value of the content in the memory cell at address 0x31. If it is, store "11" in the content of the memory cell at address 0x32; otherwise, store "FF". It is guaranteed that the double of the value in the memory cell at address 0x31 can be stored in a 1-byte. and the values are positive integer'
+          testcases:
+            - input:
+                address: 0x30
+                values:
+                    - 0x20
+                    - 0x11
+              output:
+                address: 0x32
+                values:
+                    - 0xFF
+            - input:
+                address: 0x30
+                values:
+                    - 0x46
+                    - 0x23
+              output:
+                address: 0x32
+                values:
+                    - 0x11
+            - input:
+                address: 0x30
+                values:
+                    - 0x10
+                    - 0x20
+              output:
+                address: 0x32
+                values:
+                    - 0xFF
+            - input:
+                address: 0x30
+                values:
+                    - 0x4C
+                    - 0x26
+              output:
+                address: 0x32
+                values:
+                    - 0x11
+            
     - id: 3
       name: 'Problem: loop computation'
       questions:
