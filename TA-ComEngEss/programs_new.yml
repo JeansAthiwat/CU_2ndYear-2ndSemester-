@@ -288,6 +288,45 @@ programs:
                 address: 0x32
                 values:
                     - 0xFF
+        - id: 2F
+          description: 'Write a machine language program to check whether the right byte (least significant byte) of the memory cells at addresses 0x30 and 0x31 are equal. If they are equal, store "11" (Hexadecimal) in the content of the memory cell at address 0x32; otherwise, store "FF" (Hexadecimal). For example, when comparing FA with 0A, "11" should be stored at 0x32, and when comparing A2 with A0, "FF" should be stored at 0x32.'
+          testcases:
+            - input:
+                address: 0x30
+                values:
+                    - 0x1C
+                    - 0x4C
+              output:
+                address: 0x32
+                values:
+                    - 0x11
+            - input:
+                address: 0x30
+                values:
+                    - 0x4E
+                    - 0x4F
+              output:
+                address: 0x32
+                values:
+                    - 0xFF
+            - input:
+                address: 0x30
+                values:
+                    - 0xA5
+                    - 0xDB
+              output:
+                address: 0x32
+                values:
+                    - 0x11
+            - input:
+                address: 0x30
+                values:
+                    - 0x7E
+                    - 0xFE
+              output:
+                address: 0x32
+                values:
+                    - 0xFF
     - id: 3
       name: 'Problem: loop computation'
       questions:
