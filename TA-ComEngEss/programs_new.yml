@@ -443,4 +443,34 @@ programs:
                 address: 0x52
                 values:
                     - 0x19
+        - id: 3E
+          description: 'Write a machine language program to divide the value stored in the memory cell at address 0x50 by the value in the memory cell at address 0x51. Save the result of the division in the memory cell at address 0x52. Both values are assumed to be non-zero positive integers, and the test case guarantees that the division at address 0x51 into 0x50 has no remainder, ensuring there is always a valid answer.'
+          testcases:
+            - input:
+                address: 0x50
+                values:
+                    - 0x0C
+                    - 0x06
+              output:
+                address: 0x52
+                values:
+                    - 0x02
+            - input:
+                address: 0x50
+                values:
+                    - 0x1B
+                    - 0x09
+              output:
+                address: 0x52
+                values:
+                    - 0x03
+            - input:
+                address: 0x50
+                values:
+                    - 0x55
+                    - 0x55
+              output:
+                address: 0x52
+                values:
+                    - 0x01
         
