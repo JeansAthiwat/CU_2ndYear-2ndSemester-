@@ -75,6 +75,38 @@ programs:
                 address: 0x21
                 values:
                     - 0xFB
+        - id: 1E
+          description: 'Write a machine language program to flip the binary bits (swap 1s and 0s in the same significance) of the memory cell contents at address 0x20. Store the resulting bit string in the memory cell at address 0x22. For example, the bit string "1010 0001" should become "0101 1110". HINT: See logic gate truth table.'
+          testcases:
+            - input:
+                address: 0x20
+                values:
+                    - 0xA3
+              output:
+                address: 0x22
+                values:
+                    - 0x5C
+            - input:
+                address: 0x20
+                values:
+                    - 0xAA
+              output:
+                address: 0x22
+                values:
+                    - 0x55
+        - id: 1F
+          description: 'Write a machine language program to swap the contents of the memory cell at address 0x20 with the contents of the memory cell at address 0x22. For example, if @0x20 contains "A9" and @0x21 contains "FF", after the program completes, the contents of the memory cell should be @0x20 = "FF" and @0x21 = "A9" accordingly.'
+          testcases:
+            - input:
+                address: 0x20
+                values:
+                    - 0xAF
+                    - 0xD5
+              output:
+                address: 0x20
+                values:
+                    - 0xD5
+                    - 0xAF
     - id: 2
       name: 'Problem: compare contents'
       questions:
