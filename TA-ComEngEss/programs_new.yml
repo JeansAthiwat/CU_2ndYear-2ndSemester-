@@ -56,6 +56,25 @@ programs:
                 address: 0x20
                 values:
                     - 0xD5
+        - id: 1D
+          description: 'Write a machine language program to swap the left byte with the right byte of the content of the memory cell at address 0x20. The result must be stored in the memory cell at address 0x21. For example, the value A7 should become 7A after the program completes. HINT: How do you move the rightmost bit to the leftmost position?'
+          testcases:
+            - input:
+                address: 0x20
+                values:
+                    - 0x0A
+              output:
+                address: 0x21
+                values:
+                    - 0xA0
+            - input:
+                address: 0x20
+                values:
+                    - 0xBF
+              output:
+                address: 0x21
+                values:
+                    - 0xFB
     - id: 2
       name: 'Problem: compare contents'
       questions:
