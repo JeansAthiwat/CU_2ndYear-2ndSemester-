@@ -1,0 +1,88 @@
+16:59:46 **** Incremental Build of configuration Debug for project lab_2.5 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:33: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  106 |                                 sprintf(returned, "detected line break\r\n\n");
+      |                                 ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:106:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  106 |                                 sprintf(returned, "detected line break\r\n\n");
+      |                                 ^~~~~~~
+../Core/Src/main.c:106:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:106:41: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  106 |                                 sprintf(returned, "detected line break\r\n\n");
+      |                                         ^~~~~~~~
+      |                                         |
+      |                                         uint8_t * {aka unsigned char *}
+../Core/Src/main.c:106:41: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:107:70: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  107 |                                 HAL_UART_Transmit(&huart2, returned, strlen(returned), 1000);
+      |                                                                      ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:107:70: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  107 |                                 HAL_UART_Transmit(&huart2, returned, strlen(returned), 1000);
+      |                                                                      ^~~~~~
+../Core/Src/main.c:107:70: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:107:77: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  107 |                                 HAL_UART_Transmit(&huart2, returned, strlen(returned), 1000);
+      |                                                                             ^~~~~~~~
+      |                                                                             |
+      |                                                                             uint8_t * {aka unsigned char *}
+../Core/Src/main.c:107:77: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:114:49: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |                                         sprintf(returned, "NAH BRO\r\n\n");
+      |                                                 ^~~~~~~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+../Core/Src/main.c:114:49: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:115:85: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  115 |                                         HAL_UART_Transmit(&huart2, returned, strlen(returned),
+      |                                                                                     ^~~~~~~~
+      |                                                                                     |
+      |                                                                                     uint8_t * {aka unsigned char *}
+../Core/Src/main.c:115:85: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:125:49: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  125 |                                         sprintf(returned, "YAAAASSSS SIS\r\n\n");
+      |                                                 ^~~~~~~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+../Core/Src/main.c:125:49: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:126:85: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  126 |                                         HAL_UART_Transmit(&huart2, returned, strlen(returned),
+      |                                                                                     ^~~~~~~~
+      |                                                                                     |
+      |                                                                                     uint8_t * {aka unsigned char *}
+../Core/Src/main.c:126:85: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:132:49: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  132 |                                         sprintf(returned, "wrong la \r\n\n");
+      |                                                 ^~~~~~~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+../Core/Src/main.c:132:49: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:133:85: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  133 |                                         HAL_UART_Transmit(&huart2, returned, strlen(returned),
+      |                                                                                     ^~~~~~~~
+      |                                                                                     |
+      |                                                                                     uint8_t * {aka unsigned char *}
+../Core/Src/main.c:133:85: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+arm-none-eabi-gcc -o "lab_2.5.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Awork\y2s2\embbeded_system\lab_2.5\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab_2.5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab_2.5.elf
+ 
+arm-none-eabi-size  lab_2.5.elf 
+arm-none-eabi-objdump -h -S lab_2.5.elf  > "lab_2.5.list"
+   text	   data	    bss	    dec	    hex	filename
+  11728	    100	   1972	  13800	   35e8	lab_2.5.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab_2.5.list
+ 
+
+16:59:47 Build Finished. 0 errors, 12 warnings. (took 1s.109ms)
+
