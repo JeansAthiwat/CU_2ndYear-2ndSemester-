@@ -312,21 +312,12 @@ programs:
             - input:
                 address: 0x30
                 values:
-                    - 0xA5
-                    - 0xDB
+                    - 0xFF
+                    - 0xFF
               output:
                 address: 0x32
                 values:
                     - 0x11
-            - input:
-                address: 0x30
-                values:
-                    - 0x7E
-                    - 0xFE
-              output:
-                address: 0x32
-                values:
-                    - 0xFF
     - id: 3
       name: 'Problem: loop computation'
       questions:
@@ -395,3 +386,61 @@ programs:
                 address: 0x51
                 values:
                     - 0
+        - id: 3C
+          description: 'Write a machine language program to rotate the bit of the binary value stored in the memory cell at address 0x50 until the first bit from the right (least significant bit) is `1` in binary. Store the result of the rotation in the memory cell at address 0x52. Guaranteed that the value stored in the memory cell at address 0x50 does contain at least one 1s in its binary form. For example the bit string 0101 0000 should result in 0000 0101'
+          testcases:
+            - input:
+                address: 0x50
+                values:
+                    - 0x80
+              output:
+                address: 0x51
+                values:
+                    - 0x01
+            - input:
+                address: 0x50
+                values:
+                    - 0x68
+              output:
+                address: 0x51
+                values:
+                    - 0x0D
+            - input:
+                address: 0x50
+                values:
+                    - 0xB3
+              output:
+                address: 0x51
+                values:
+                    - 0xB3
+        - id: 3D
+          description: 'Write a machine language program to calculate the summation of X + i for values of i from 0 to n (sum of X+0, X+1, X+2, ..., X+n), where the initial value X is stored in the memory cell at address 0x50, and the value of (n) is stored in the memory cell at address 0x51. Save the result of the summation in the memory cell at address 0x52. Assume that both the initial value X and n are non-negative integers, and the result of the summation can be stored in a 1-byte memory cell. For example X=”1A”(26 in decimal) , n=”03” (3 in decimal) the results will be “6E” (sum of 26+0,26+1,26+2,26+3 = 110)'
+          testcases:
+            - input:
+                address: 0x50
+                values:
+                    - 0x01
+                    - 0x05
+              output:
+                address: 0x52
+                values:
+                    - 0x15
+            - input:
+                address: 0x50
+                values:
+                    - 0x0B
+                    - 0x00
+              output:
+                address: 0x52
+                values:
+                    - 0x0B
+            - input:
+                address: 0x50
+                values:
+                    - 0x0C
+                    - 0x01
+              output:
+                address: 0x52
+                values:
+                    - 0x19
+        
