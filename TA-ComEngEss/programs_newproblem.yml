@@ -289,7 +289,7 @@ programs:
                 values:
                     - 0xFF
         - id: 2F
-          description: 'Write a machine language program to check whether the right byte (least significant byte) of the memory cells at addresses 0x30 and 0x31 are equal. If they are equal, store "11" (Hexadecimal) in the content of the memory cell at address 0x32; otherwise, store "FF" (Hexadecimal). For example, when comparing FA with 0A, "11" should be stored at 0x32, and when comparing A2 with A0, "FF" should be stored at 0x32.'
+          description: 'Write a machine language program to check whether the right hexadecimal value (first four bits from the right) of the memory cells at addresses 0x30 and 0x31 are equal. If they are equal, store "11" (Hexadecimal) in the content of the memory cell at address 0x32; otherwise, store "FF" (Hexadecimal). For example, when comparing FA with 0A, "11" should be stored at 0x32, and when comparing A2 with A0, "FF" should be stored at 0x32.'
           testcases:
             - input:
                 address: 0x30
