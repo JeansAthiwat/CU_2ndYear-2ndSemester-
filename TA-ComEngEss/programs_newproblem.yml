@@ -57,7 +57,7 @@ programs:
                 values:
                     - 0xD5
         - id: 1D
-          description: 'Write a machine language program to swap the left byte with the right byte of the content of the memory cell at address 0x20. The result must be stored in the memory cell at address 0x21. For example, the value A7 should become 7A after the program completes. HINT: How do you move the rightmost bit to the leftmost position?'
+          description: 'Write a machine language program to swap the left hexadecimal value with the right hexadecimal value of the content of the memory cell at address 0x20. The result must be stored in the memory cell at address 0x21. For example, the value A7 should become 7A after the program completes. HINT: How do you move the rightmost bit to the leftmost position'
           testcases:
             - input:
                 address: 0x20
