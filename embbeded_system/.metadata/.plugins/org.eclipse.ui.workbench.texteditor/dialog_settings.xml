@@ -6,14 +6,25 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="Handler"/>
 		<list key="findhistory">
+			<item value="handler"/>
+			<item value="HAL_TIM_Base_St"/>
+			<item value="HAL_TIM_Base_Start_IT(&amp;htim1);"/>
+			<item value="tim"/>
+			<item value="3"/>
+			<item value="mx_t"/>
+			<item value="mx_in"/>
+			<item value="mx_int"/>
+			<item value="ext"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="281"/>
-		<item key="DIALOG_Y_ORIGIN" value="212"/>
+		<item key="DIALOG_X_ORIGIN" value="720"/>
+		<item key="DIALOG_Y_ORIGIN" value="410"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
