@@ -2,16 +2,8 @@
 
 using namespace std;
 /*
-PSUDO CODE
-    gaps = [700,350,125,60,30,15,7,3,2,1]
-    for gap in gaps:
-        for 0 to gap-1
-            #we do insertion sort with G jump
-            T tmp = A[G]
-            i =
-            while()
-            .stupid lets get real
-
+THE OTHER varient
+is just sort  1 index per round
 */
 
 vector<int> GAPS = {4, 2, 1};
