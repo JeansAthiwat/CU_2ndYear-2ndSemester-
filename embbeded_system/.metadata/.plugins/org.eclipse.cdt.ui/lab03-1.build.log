@@ -1,40 +1,67 @@
-15:54:14 **** Incremental Build of configuration Debug for project lab03-1 ****
+14:33:32 **** Incremental Build of configuration Debug for project lab03-1 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'PrintEventCounts':
-../Core/Src/main.c:75:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-   75 |         sprintf(message, "Green LED: %lu, Red LED: %lu\r\n", green_led_counter,
-      |         ^~~~~~~
-../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   20 | #include "main.h"
-  +++ |+#include <stdio.h>
-   21 | 
-../Core/Src/main.c:75:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-   75 |         sprintf(message, "Green LED: %lu, Red LED: %lu\r\n", green_led_counter,
-      |         ^~~~~~~
-../Core/Src/main.c:75:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:77:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-   77 |         HAL_UART_Transmit(&huart2, (uint8_t*) message, strlen(message),
-      |                                                        ^~~~~~
-../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
-   20 | #include "main.h"
-  +++ |+#include <string.h>
-   21 | 
-../Core/Src/main.c:77:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
-   77 |         HAL_UART_Transmit(&huart2, (uint8_t*) message, strlen(message),
-      |                                                        ^~~~~~
-../Core/Src/main.c:77:56: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:71:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   71 |         HAL_UART_Transmit(&huart2, buffer, 1, 100);
+      |                                    ^~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:74:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   74 |                 HAL_UART_Transmit(&huart2, "\n", 1, 100);
+      |                                            ^~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:76:38: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   76 |         HAL_UART_Receive_IT(&huart2, buffer, 1);
+      |                                      ^~~~~~
+      |                                      |
+      |                                      char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  117 |   HAL_UART_Receive_IT(&huart2, buffer, 1);
+      |                                ^~~~~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
 arm-none-eabi-gcc -o "lab03-1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Awork\y2s2\embbeded_system\lab03-1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab03-1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: lab03-1.elf
  
 arm-none-eabi-size  lab03-1.elf 
 arm-none-eabi-objdump -h -S lab03-1.elf  > "lab03-1.list"
    text	   data	    bss	    dec	    hex	filename
-  11860	     20	   1716	  13596	   351c	lab03-1.elf
+  17092	     20	   1868	  18980	   4a24	lab03-1.elf
 Finished building: default.size.stdout
  
 Finished building: lab03-1.list
  
 
-15:54:15 Build Finished. 0 errors, 4 warnings. (took 605ms)
+14:33:33 Build Finished. 0 errors, 4 warnings. (took 658ms)
 

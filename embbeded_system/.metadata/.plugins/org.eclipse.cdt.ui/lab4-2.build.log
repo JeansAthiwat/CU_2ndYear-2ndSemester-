@@ -1,0 +1,80 @@
+15:55:59 **** Incremental Build of configuration Debug for project lab4-2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:25: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  113 |                         sprintf(buf, "%d\r\n", adcval);
+      |                         ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:113:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  113 |                         sprintf(buf, "%d\r\n", adcval);
+      |                         ^~~~~~~
+../Core/Src/main.c:113:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:115:57: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  115 |                         HAL_UART_Transmit(&huart2, buf, strlen(buf), 1000);
+      |                                                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:115:57: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  115 |                         HAL_UART_Transmit(&huart2, buf, strlen(buf), 1000);
+      |                                                         ^~~~~~
+../Core/Src/main.c:115:57: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:115:52: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  115 |                         HAL_UART_Transmit(&huart2, buf, strlen(buf), 1000);
+      |                                                    ^~~
+      |                                                    |
+      |                                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:169:21: error: invalid storage class for function 'MX_ADC1_Init'
+  169 |         static void MX_ADC1_Init(void) {
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c:218:21: error: invalid storage class for function 'MX_USART2_UART_Init'
+  218 |         static void MX_USART2_UART_Init(void) {
+      |                     ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:249:21: error: invalid storage class for function 'MX_GPIO_Init'
+  249 |         static void MX_GPIO_Init(void) {
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c:295:9: error: expected declaration or statement at end of input
+  295 |         }
+      |         ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:53:13: warning: 'MX_GPIO_Init' used but never defined
+   53 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:54:13: warning: 'MX_USART2_UART_Init' used but never defined
+   54 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_ADC1_Init' used but never defined
+   55 | static void MX_ADC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:288:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  288 |         void Error_Handler(void) {
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:249:21: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  249 |         static void MX_GPIO_Init(void) {
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c:218:21: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  218 |         static void MX_USART2_UART_Init(void) {
+      |                     ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:169:21: warning: 'MX_ADC1_Init' defined but not used [-Wunused-function]
+  169 |         static void MX_ADC1_Init(void) {
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c:124:14: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  124 |         void SystemClock_Config(void) {
+      |              ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+15:55:59 Build Failed. 5 errors, 13 warnings. (took 314ms)
+

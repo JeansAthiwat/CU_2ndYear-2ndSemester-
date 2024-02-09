@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Handler"/>
+		<item key="selection" value="Start"/>
 		<list key="findhistory">
+			<item value="start"/>
+			<item value="HAL_TIM_PWM_Start"/>
 			<item value="handler"/>
 			<item value="HAL_TIM_Base_St"/>
 			<item value="HAL_TIM_Base_Start_IT(&amp;htim1);"/>
