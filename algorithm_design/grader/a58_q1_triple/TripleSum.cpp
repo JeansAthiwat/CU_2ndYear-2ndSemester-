@@ -2,66 +2,61 @@
 
 using namespace std;
 
-template <typename T>
-bool combinations(int total_index, std::vector<bool> &areSol, int current_index, vector<T> &candidateSolution, int k, int chosen, vector<int> &outvalues, int need)
+// solve using 2 pointers techniques as the vector are already sorted if it is not hashing may begud
+bool find3Numbers(vector<int> &A, int arr_size, int target)
 {
-    // recursive At ith step, we decides if the ith item is selected
-    if (current_index < total_index)
-    {
-        // preorder traversal
-        // if we are not gonnapick currect_index we must make sure that the remaining index is more to k
-        if (chosen + (total_index - current_index) > k)
-        {
-            areSol[current_index] = false;
-            if (combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen, outvalues, need))
-                return true;
-        }
+    int left, right;
 
-        // if we pick we must check that the sol len is not more that k (aka chosen < k)
-        if (chosen < k)
-        {
-            areSol[current_index] = true;
-            outvalues[chosen] = candidateSolution[current_index];
-            if (combinations(total_index, areSol, current_index + 1, candidateSolution, k, chosen + 1, outvalues, need))
-                return true;
-        }
-    }
-    else
+    // we use i <= arr_size - 3 here as we have to pick 3
+    for (int i = 0; i <= arr_size - 3; i++)
     {
-        int sum = outvalues[0] + outvalues[1] + outvalues[2];
-        // cout << "sum: " << sum << "\n ";
-        if (sum == need)
+        // ปัก pointer
+        left = i + 1;
+        right = arr_size - 1;
+
+        // loop through the remaining 2 with Sigma tech
+        while (left < right)
         {
-            // cout << " " << outvalues[0] << " " << outvalues[1] << " " << outvalues[2];
-            return true;
+            // if sum is equals to the targetreturn true
+            int sum = A[i] + A[left] + A[right];
+            if (sum == target)
+            {
+                return true;
+            }
+            // if it is more than the target move the right pointer to the right (decrease value)
+            else if (sum > target)
+            {
+                right--;
+            }
+            // if it is less than the target move the left pointer to the left (increase value)
+            else if (sum < target)
+            {
+                left++;
+            }
         }
-        // cout << endl;
     }
     return false;
 }
-
+/* Driver code */
 int main()
 {
-    int k = 3;
+
     int n, m;
     cin >> n >> m;
 
-    vector<int> candidateSolution(n);
+    vector<int> A(n);
     for (int i = 0; i < n; i++)
     {
-        cin >> candidateSolution[i];
+        cin >> A[i];
     }
-
-    int total_index = candidateSolution.size();
-    vector<bool> areSol(total_index);
-    vector<int> outvalues(k);
 
     for (int i = 0; i < m; i++)
     {
-        int ans;
-        cin >> ans;
-        bool sex = combinations(total_index, areSol, 0, candidateSolution, k, 0, outvalues, ans);
-        if (sex)
+        int target;
+        cin >> target;
+
+        bool isItPwossibwleUWU = find3Numbers(A, n, target);
+        if (isItPwossibwleUWU)
         {
             cout << "YES"
                  << "\n";
