@@ -21,7 +21,7 @@ void insertion_sort(vector<T> &A)
 
 int main()
 {
-    vector<int> vec = {1, 5, 4, 6, 2, 8, 7, 9, 3};
+    vector<int> vec = {1, 5, 4, 6, 2, 8, 7,2,4, 9, 3};
     insertion_sort(vec);
 
     for (auto &x : vec)
