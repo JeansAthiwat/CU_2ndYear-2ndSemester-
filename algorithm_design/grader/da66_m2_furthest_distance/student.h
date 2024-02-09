@@ -6,12 +6,30 @@
 template <typename KeyT,
           typename MappedT,
           typename CompareT>
-int CP::map_bst<KeyT, MappedT, CompareT>::my_recur(node *n, int &aux)
+int CP::map_bst<KeyT, MappedT, CompareT>::my_recur(node *n, int &height)
 {
-    // You MAY use this function
+    /*
+    IDEA: where is max dist?
+        it is the maximum between
+        1.the left height + right hight  plus 2 edges from linking to the psudo root
+        2.the max dist of child node (if it is greater than the 1. )
+
+    */
+    int left_height = -1, right_height = -1; // assume no child node height value
+    int left_mdist = 0, right_mdist = 0;     // mdist of the children
+
     if (n == NULL)
         return -1;
-    return std::max(my_recur(n->left, aux), my_recur(n->right, aux)) + 1;
+
+    // calculate the diameter(max number of edges from this node) (we get the height as byproduct recursively)
+    left_mdist = my_recur(n->left, left_height);
+    right_mdist = my_recur(n->right, right_height);
+
+    // calculate the current node height
+    height = std::max(left_height, right_height) + 1;
+
+
+    return std::max(left_height + right_height + 2, std::max(left_mdist, right_mdist));
 }
 
 template <typename KeyT,
@@ -21,25 +39,11 @@ int CP::map_bst<KeyT, MappedT, CompareT>::furthest_distance()
 {
     // write your code here
     if (mSize == 0)
-    {
         return -1;
-    }
 
-    int edges = 0;
-    int aux = 0;
-
-    if (mRoot->left != NULL)
-    {
-        ++edges;
-        edges += my_recur(mRoot->left, aux);
-    }
-    if (mRoot->right != NULL)
-    {
-        ++edges;
-        edges += my_recur(mRoot->right, aux);
-    }
-
-    return edges;
+    int height = 0;
+    int mdist = my_recur(mRoot, height);
+    return mdist;
 }
 
 #endif
