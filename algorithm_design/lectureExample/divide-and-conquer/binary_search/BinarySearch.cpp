@@ -3,7 +3,7 @@
 using namespace std;
 
 template <typename T>
-int my_binary_search(vector<T> &a, T &target, int start, int stop)
+int my_merge_sort(vector<T> &a, T &target, int start, int stop)
 {
 
     // trivial case
@@ -18,11 +18,11 @@ int my_binary_search(vector<T> &a, T &target, int start, int stop)
     int mid = (start + stop) >> 1; // divide by 2
     if (target <= a[mid])
     {
-        return my_binary_search(a, target, start, mid);
+        return my_merge_sort(a, target, start, mid);
     }
     else
     {
-        return my_binary_search(a, target, mid + 1, stop);
+        return my_merge_sort(a, target, mid + 1, stop);
     }
 }
 
@@ -36,7 +36,7 @@ int main()
         int target;
         cin >> target;
 
-        int index = my_binary_search(a, target, 0, a.size() - 1);
+        int index = my_merge_sort(a, target, 0, a.size() - 1);
         cout << index;
         cout << "\n-------------------------------------------\n";
     }
