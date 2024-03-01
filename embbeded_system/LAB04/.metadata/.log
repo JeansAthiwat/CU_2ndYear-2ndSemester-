@@ -522,3 +522,67 @@ java.io.FileNotFoundException: C:\Awork\y2s2\embbeded_system\LAB04\exampleSkillT
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-02-20 10:11:35.062 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-20 10:11:55.863
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-20 10:11:55.870
+!MESSAGE Log4j2 initialized with config file C:\Awork\y2s2\embbeded_system\LAB04\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-20 10:12:04.172
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-02-20 10:50:02.935 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Framework arguments:  C:\Awork\y2s2\embbeded_system\LAB02\lab_2.5\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Awork\y2s2\embbeded_system\LAB02\lab_2.5\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-20 10:50:20.195
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-20 10:50:20.196
+!MESSAGE Log4j2 initialized with config file C:\Awork\y2s2\embbeded_system\LAB04\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-20 10:50:27.128
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-20 10:50:31.921
+!MESSAGE Indexed 'lab_2.5' (22 sources, 119 headers) in 3.94 sec: 11,572 declarations; 43,462 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.43%)
+!SESSION 2024-02-20 13:10:53.743 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-20 13:11:06.888
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-20 13:11:06.895
+!MESSAGE Log4j2 initialized with config file C:\Awork\y2s2\embbeded_system\LAB04\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-20 13:11:13.081
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-02-20 13:20:00.546 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Awork\y2s2\embbeded_system\LAB04
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-20 13:20:05.201
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-20 13:20:05.201
+!MESSAGE Log4j2 initialized with config file C:\Awork\y2s2\embbeded_system\LAB04\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-20 13:20:09.842
+!MESSAGE Started RMI Server, listening on port 41337
