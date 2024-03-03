@@ -1,26 +1,49 @@
-#include <bits/stdc++.h>
+#include "stdio.h"
+#include "algorithm"
 using namespace std;
-int N;
-int binary_solve()
+int N, M, X, DP[1000005];
+int firstNotLess(int index, int lo = 1, int hi = M + 1)
 {
-    int result = 0;
+    // binary search
+    if (lo == hi)
+        return lo;
 
-    return result;
+    // div
+    int mid = (lo + hi) / 2;
+    if (index <= DP[mid])
+        return firstNotLess(index, lo, mid);
+    return firstNotLess(index, mid + 1, hi);
+
+    while (lo < hi)
+    {
+        int mid = (lo + hi) / 2;
+        if (DP[mid] >= index)
+            hi = mid;
+        else
+            lo = mid + 1;
+    }
+    return lo;
 }
 int main()
 {
-    cin >> N;
+    DP[1] = 1;
+    DP[2] = 3;
+    for (int i = 3, j = 2;; i++)
+    {
+        if (i > DP[j])
+            j++;
+        DP[i] = DP[i - 1] + j;
+        if (DP[i] > (int)(2e9))
+        {
+            M = i;
+            break;
+        }
+    }
+    scanf("%d", &N);
     while (N--)
     {
-        int i;
-        int value = 1;
-        cin >> i;
-        while (i > ((value * (value + 1)) / 2))
-        {
-            value++;
-        }
-        cout << value << "\n";
-    }
+        scanf("%d", &X);
 
-    return 0;
+        printf("%d\n", firstNotLess(X));
+    }
 }
