@@ -13,16 +13,6 @@ int firstNotLess(int index, int lo = 1, int hi = M + 1)
     if (index <= DP[mid])
         return firstNotLess(index, lo, mid);
     return firstNotLess(index, mid + 1, hi);
-
-    while (lo < hi)
-    {
-        int mid = (lo + hi) / 2;
-        if (DP[mid] >= index)
-            hi = mid;
-        else
-            lo = mid + 1;
-    }
-    return lo;
 }
 int main()
 {
