@@ -14,9 +14,10 @@ int solve_BU(int N, int K)
         combinations[i][0] = 1;
         combinations[i][i] = 1;
     }
-    for (int n = 1; n < MAX_N; n++)
+
+    for (int k = 1; k <= K; k++)
     {
-        for (int k = 1; k < MAX_K; k++)
+        for (int n = k + 1; n <= k + (N - K); n++)
         {
             combinations[n][k] = combinations[n - 1][k - 1] + combinations[n - 1][k];
         }
