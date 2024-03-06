@@ -8,7 +8,6 @@ int solve(vector<int> &f_res, int n)
         return n;
 
     // divide and conquer parts
-
     // if already solved use results from f_res
     if (f_res[n] > 0)
         return f_res[n];
@@ -23,7 +22,6 @@ int solve(vector<int> &f_res, int n)
 
 int main()
 {
-
     int N;
     cin >> N;
     vector<int> f_res(50);
