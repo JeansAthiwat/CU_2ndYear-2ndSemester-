@@ -1,0 +1,524 @@
+13:16:55 **** Build of configuration Debug for project testo ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "testo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Awork\y2s2\embbeded_system\SkillTest01\testo\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="testo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: testo.elf
+ 
+arm-none-eabi-size  testo.elf 
+arm-none-eabi-objdump -h -S testo.elf  > "testo.list"
+   text	   data	    bss	    dec	    hex	filename
+   8640	     20	   1644	  10304	   2840	testo.elf
+Finished building: default.size.stdout
+ 
+Finished building: testo.list
+ 
+13:17:04 **** Incremental Build of configuration Debug for project testo ****
+make -j12 all 
+arm-none-eabi-size  testo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8640	     20	   1644	  10304	   2840	testo.elf
+Finished building: default.size.stdout
+ 
+13:24:34 **** Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "skilltest1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Awork\y2s2\embbeded_system\SkillTest01\skilltest1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="skilltest1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: skilltest1.elf
+ 
+arm-none-eabi-size  skilltest1.elf 
+arm-none-eabi-objdump -h -S skilltest1.elf  > "skilltest1.list"
+   text	   data	    bss	    dec	    hex	filename
+   7784	     20	   1644	   9448	   24e8	skilltest1.elf
+Finished building: default.size.stdout
+ 
+Finished building: skilltest1.list
+ 
+13:24:41 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-size  skilltest1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7784	     20	   1644	   9448	   24e8	skilltest1.elf
+Finished building: default.size.stdout
+ 
+13:27:24 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:93:17: warning: unused variable 'clickCount' [-Wunused-variable]
+   93 |         uint8_t clickCount = 0;
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:92:17: warning: variable 'studentID' set but not used [-Wunused-but-set-variable]
+   92 |         uint8_t studentID[10]; // 6531347621
+      |                 ^~~~~~~~~
+arm-none-eabi-gcc -o "skilltest1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Awork\y2s2\embbeded_system\SkillTest01\skilltest1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="skilltest1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: skilltest1.elf
+ 
+arm-none-eabi-size  skilltest1.elf 
+arm-none-eabi-objdump -h -S skilltest1.elf  > "skilltest1.list"
+   text	   data	    bss	    dec	    hex	filename
+   7832	     20	   1644	   9496	   2518	skilltest1.elf
+Finished building: default.size.stdout
+ 
+Finished building: skilltest1.list
+ 
+13:38:21 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c:62:1: warning: data definition has no type or storage class
+   62 | studentID[0] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:62:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:62:1: error: conflicting types for 'studentID'; have 'int[0]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:62:16: error: invalid initializer
+   62 | studentID[0] = 6;
+      |                ^
+../Core/Src/main.c:63:1: warning: data definition has no type or storage class
+   63 | studentID[1] = 5;
+      | ^~~~~~~~~
+../Core/Src/main.c:63:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:63:1: error: conflicting types for 'studentID'; have 'int[1]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:63:16: error: invalid initializer
+   63 | studentID[1] = 5;
+      |                ^
+../Core/Src/main.c:64:1: warning: data definition has no type or storage class
+   64 | studentID[2] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:64:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:64:1: error: conflicting types for 'studentID'; have 'int[2]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:64:16: error: invalid initializer
+   64 | studentID[2] = 3;
+      |                ^
+../Core/Src/main.c:65:1: warning: data definition has no type or storage class
+   65 | studentID[3] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:65:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:65:1: error: conflicting types for 'studentID'; have 'int[3]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:65:16: error: invalid initializer
+   65 | studentID[3] = 1;
+      |                ^
+../Core/Src/main.c:66:1: warning: data definition has no type or storage class
+   66 | studentID[4] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:66:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:66:1: error: conflicting types for 'studentID'; have 'int[4]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:66:16: error: invalid initializer
+   66 | studentID[4] = 3;
+      |                ^
+../Core/Src/main.c:67:1: warning: data definition has no type or storage class
+   67 | studentID[5] = 4;
+      | ^~~~~~~~~
+../Core/Src/main.c:67:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:67:1: error: conflicting types for 'studentID'; have 'int[5]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:67:16: error: invalid initializer
+   67 | studentID[5] = 4;
+      |                ^
+../Core/Src/main.c:68:1: warning: data definition has no type or storage class
+   68 | studentID[6] = 7;
+      | ^~~~~~~~~
+../Core/Src/main.c:68:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:68:1: error: conflicting types for 'studentID'; have 'int[6]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:68:16: error: invalid initializer
+   68 | studentID[6] = 7;
+      |                ^
+../Core/Src/main.c:69:1: warning: data definition has no type or storage class
+   69 | studentID[7] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:69:1: error: conflicting types for 'studentID'; have 'int[7]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:69:16: error: invalid initializer
+   69 | studentID[7] = 6;
+      |                ^
+../Core/Src/main.c:70:1: warning: data definition has no type or storage class
+   70 | studentID[8] = 2;
+      | ^~~~~~~~~
+../Core/Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:70:1: error: conflicting types for 'studentID'; have 'int[8]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:70:16: error: invalid initializer
+   70 | studentID[8] = 2;
+      |                ^
+../Core/Src/main.c:71:1: warning: data definition has no type or storage class
+   71 | studentID[9] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:71:1: error: conflicting types for 'studentID'; have 'int[9]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:71:16: error: invalid initializer
+   71 | studentID[9] = 1;
+      |                ^
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:84:52: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+   84 |                         && HAL_GPIO_ReadPin(GPIOC, GPIO_Pin_13) == GPIO_PIN_RESET) {
+      |                                                    ^~~~~~~~~~~
+      |                                                    GPIO_PIN_13
+../Core/Src/main.c:84:52: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:85:54: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   85 |                 HAL_UART_Transmit(&huart2, studentID + (clickCount % 10), 1, 1000);
+      |                                            ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:39:12 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:1: warning: data definition has no type or storage class
+   62 | studentID[0] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:62:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:62:1: error: conflicting types for 'studentID'; have 'int[0]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:62:16: error: invalid initializer
+   62 | studentID[0] = 6;
+      |                ^
+../Core/Src/main.c:63:1: warning: data definition has no type or storage class
+   63 | studentID[1] = 5;
+      | ^~~~~~~~~
+../Core/Src/main.c:63:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:63:1: error: conflicting types for 'studentID'; have 'int[1]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:63:16: error: invalid initializer
+   63 | studentID[1] = 5;
+      |                ^
+../Core/Src/main.c:64:1: warning: data definition has no type or storage class
+   64 | studentID[2] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:64:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:64:1: error: conflicting types for 'studentID'; have 'int[2]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:64:16: error: invalid initializer
+   64 | studentID[2] = 3;
+      |                ^
+../Core/Src/main.c:65:1: warning: data definition has no type or storage class
+   65 | studentID[3] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:65:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:65:1: error: conflicting types for 'studentID'; have 'int[3]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:65:16: error: invalid initializer
+   65 | studentID[3] = 1;
+      |                ^
+../Core/Src/main.c:66:1: warning: data definition has no type or storage class
+   66 | studentID[4] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:66:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:66:1: error: conflicting types for 'studentID'; have 'int[4]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:66:16: error: invalid initializer
+   66 | studentID[4] = 3;
+      |                ^
+../Core/Src/main.c:67:1: warning: data definition has no type or storage class
+   67 | studentID[5] = 4;
+      | ^~~~~~~~~
+../Core/Src/main.c:67:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:67:1: error: conflicting types for 'studentID'; have 'int[5]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:67:16: error: invalid initializer
+   67 | studentID[5] = 4;
+      |                ^
+../Core/Src/main.c:68:1: warning: data definition has no type or storage class
+   68 | studentID[6] = 7;
+      | ^~~~~~~~~
+../Core/Src/main.c:68:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:68:1: error: conflicting types for 'studentID'; have 'int[6]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:68:16: error: invalid initializer
+   68 | studentID[6] = 7;
+      |                ^
+../Core/Src/main.c:69:1: warning: data definition has no type or storage class
+   69 | studentID[7] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:69:1: error: conflicting types for 'studentID'; have 'int[7]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:69:16: error: invalid initializer
+   69 | studentID[7] = 6;
+      |                ^
+../Core/Src/main.c:70:1: warning: data definition has no type or storage class
+   70 | studentID[8] = 2;
+      | ^~~~~~~~~
+../Core/Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:70:1: error: conflicting types for 'studentID'; have 'int[8]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:70:16: error: invalid initializer
+   70 | studentID[8] = 2;
+      |                ^
+../Core/Src/main.c:71:1: warning: data definition has no type or storage class
+   71 | studentID[9] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:71:1: error: conflicting types for 'studentID'; have 'int[9]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:71:16: error: invalid initializer
+   71 | studentID[9] = 1;
+      |                ^
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:84:52: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+   84 |                         && HAL_GPIO_ReadPin(GPIOC, GPIO_Pin_13) == GPIO_PIN_RESET) {
+      |                                                    ^~~~~~~~~~~
+      |                                                    GPIO_PIN_13
+../Core/Src/main.c:84:52: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:86:54: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |                 HAL_UART_Transmit(&huart2, studentID + showIndex, 1, 1000);
+      |                                            ~~~~~~~~~~^~~~~~~~~~~
+      |                                                      |
+      |                                                      int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:39:47 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:1: warning: data definition has no type or storage class
+   62 | studentID[0] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:62:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:62:1: error: conflicting types for 'studentID'; have 'int[0]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:62:16: error: invalid initializer
+   62 | studentID[0] = 6;
+      |                ^
+../Core/Src/main.c:63:1: warning: data definition has no type or storage class
+   63 | studentID[1] = 5;
+      | ^~~~~~~~~
+../Core/Src/main.c:63:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:63:1: error: conflicting types for 'studentID'; have 'int[1]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:63:16: error: invalid initializer
+   63 | studentID[1] = 5;
+      |                ^
+../Core/Src/main.c:64:1: warning: data definition has no type or storage class
+   64 | studentID[2] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:64:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:64:1: error: conflicting types for 'studentID'; have 'int[2]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:64:16: error: invalid initializer
+   64 | studentID[2] = 3;
+      |                ^
+../Core/Src/main.c:65:1: warning: data definition has no type or storage class
+   65 | studentID[3] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:65:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:65:1: error: conflicting types for 'studentID'; have 'int[3]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:65:16: error: invalid initializer
+   65 | studentID[3] = 1;
+      |                ^
+../Core/Src/main.c:66:1: warning: data definition has no type or storage class
+   66 | studentID[4] = 3;
+      | ^~~~~~~~~
+../Core/Src/main.c:66:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:66:1: error: conflicting types for 'studentID'; have 'int[4]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:66:16: error: invalid initializer
+   66 | studentID[4] = 3;
+      |                ^
+../Core/Src/main.c:67:1: warning: data definition has no type or storage class
+   67 | studentID[5] = 4;
+      | ^~~~~~~~~
+../Core/Src/main.c:67:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:67:1: error: conflicting types for 'studentID'; have 'int[5]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:67:16: error: invalid initializer
+   67 | studentID[5] = 4;
+      |                ^
+../Core/Src/main.c:68:1: warning: data definition has no type or storage class
+   68 | studentID[6] = 7;
+      | ^~~~~~~~~
+../Core/Src/main.c:68:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:68:1: error: conflicting types for 'studentID'; have 'int[6]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:68:16: error: invalid initializer
+   68 | studentID[6] = 7;
+      |                ^
+../Core/Src/main.c:69:1: warning: data definition has no type or storage class
+   69 | studentID[7] = 6;
+      | ^~~~~~~~~
+../Core/Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:69:1: error: conflicting types for 'studentID'; have 'int[7]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:69:16: error: invalid initializer
+   69 | studentID[7] = 6;
+      |                ^
+../Core/Src/main.c:70:1: warning: data definition has no type or storage class
+   70 | studentID[8] = 2;
+      | ^~~~~~~~~
+../Core/Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:70:1: error: conflicting types for 'studentID'; have 'int[8]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:70:16: error: invalid initializer
+   70 | studentID[8] = 2;
+      |                ^
+../Core/Src/main.c:71:1: warning: data definition has no type or storage class
+   71 | studentID[9] = 1;
+      | ^~~~~~~~~
+../Core/Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'studentID' [-Wimplicit-int]
+../Core/Src/main.c:71:1: error: conflicting types for 'studentID'; have 'int[9]'
+../Core/Src/main.c:59:9: note: previous declaration of 'studentID' with type 'uint8_t[10]' {aka 'unsigned char[10]'}
+   59 | uint8_t studentID[10]; // 6531347621
+      |         ^~~~~~~~~
+../Core/Src/main.c:71:16: error: invalid initializer
+   71 | studentID[9] = 1;
+      |                ^
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:84:52: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+   84 |                         && HAL_GPIO_ReadPin(GPIOC, GPIO_Pin_13) == GPIO_PIN_RESET) {
+      |                                                    ^~~~~~~~~~~
+      |                                                    GPIO_PIN_13
+../Core/Src/main.c:84:52: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:86:54: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |                 HAL_UART_Transmit(&huart2, studentID + showIndex, 1, 1000);
+      |                                            ~~~~~~~~~~^~~~~~~~~~~
+      |                                                      |
+      |                                                      int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:41:30 **** Incremental Build of configuration Debug for project skilltest1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:19: error: expected ')' before string constant
+   62 | sprintf(studentID, "6531347621");
+      |                   ^~~~~~~~~~~~~
+      |                   )
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:75:52: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+   75 |                         && HAL_GPIO_ReadPin(GPIOC, GPIO_Pin_13) == GPIO_PIN_RESET) {
+      |                                                    ^~~~~~~~~~~
+      |                                                    GPIO_PIN_13
+../Core/Src/main.c:75:52: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.

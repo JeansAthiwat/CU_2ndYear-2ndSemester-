@@ -1,0 +1,10 @@
+13:17:04 **** Incremental Build of configuration Debug for project testo ****
+make -j12 all 
+arm-none-eabi-size  testo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8640	     20	   1644	  10304	   2840	testo.elf
+Finished building: default.size.stdout
+ 
+
+13:17:05 Build Finished. 0 errors, 0 warnings. (took 247ms)
+
