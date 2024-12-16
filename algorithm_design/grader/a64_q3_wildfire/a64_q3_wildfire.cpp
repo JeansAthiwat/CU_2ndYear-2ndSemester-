@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class DirectedGraph
+class Graph
 {
     // using adj matrix
 public:
     int V;
     vector<vector<int>> E;
 
-    DirectedGraph(int V, vector<vector<int>> &E) : V(V), E(E)
+    Graph(int V, vector<vector<int>> &E) : V(V), E(E)
     {
     }
 
@@ -30,7 +30,7 @@ public:
     }
 };
 
-void dfs(int starting_vertex, DirectedGraph &G, vector<int> &beautifulness)
+void dfs(int starting_vertex, Graph &G, vector<int> &beautifulness)
 {
     beautifulness[starting_vertex] = 0;
     for (auto &adj_v : G.adj(starting_vertex))
@@ -52,7 +52,7 @@ int main()
     cin >> n >> m >> k;
     vector<vector<int>> edges(n, vector<int>(n));
 
-    DirectedGraph G(n, edges);
+    Graph G(n, edges);
     vector<int> beautifulness(n);
     vector<int> start_node(k);
 
